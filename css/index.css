@@ -179,7 +179,7 @@ img {
   .home .navbar {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
   }
 }
 .home nav {
@@ -211,7 +211,6 @@ img {
 .home .content-section {
   margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 .home .content-section .text-content {
