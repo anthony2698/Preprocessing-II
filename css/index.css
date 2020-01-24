@@ -170,10 +170,17 @@ img {
 }
 .home .navbar {
   width: 100%;
-  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .home .navbar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 }
 .home nav {
   width: 50%;
@@ -195,7 +202,11 @@ img {
   padding: 20px;
 }
 .home .header {
+  border-top: 2px dashed #C0C0C0;
   border-bottom: 2px dashed #C0C0C0;
+}
+.home .header img {
+  padding-bottom: 2%;
 }
 .home .content-section {
   margin: 30px 0;
@@ -242,4 +253,17 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #17A2B8;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
 }

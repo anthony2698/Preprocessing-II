@@ -1,7 +1,12 @@
 .home {
 
   .header {
+    border-top: 2px dashed @navigation-border;
     border-bottom: 2px dashed @navigation-border;
+     
+    img {
+      padding-bottom: 2%;
+    }
   }
 
   .content-section {
@@ -60,6 +65,12 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .custom-btn(@bg-color: @eastern-blue, @width:200px, @font-color:white);
+      }
     }
   }
+
+
 }// home

@@ -4,10 +4,16 @@
 
     .navbar {
         width: 100%;
-        border-bottom: 2px dashed @navigation-border;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 2% 0;
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
     }
 
     nav {
